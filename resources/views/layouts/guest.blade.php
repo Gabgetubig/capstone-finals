@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'CapZone') }}</title>
 
         <!-- Favicons -->
         <link href="assets/img/favicon.png" rel="icon">
@@ -23,6 +23,7 @@
         <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
         <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
         <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Zen Dots" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Template Main CSS File -->
@@ -35,15 +36,15 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                             <div class="d-flex justify-content-center py-4">
-                                <a href="index.html" class="logo d-flex align-items-center w-auto">
-                                    <img src="assets/img/logo.png" alt="" />
-                                    <span class="d-none d-lg-block">Laravel Lesson</span>
+                                <a href="login.blade.php" class="logo d-flex align-items-center w-auto">
+                                    <span class="d-none d-lg-block" style="color: black;">CAPZONE</span>
+                                    <i class="bi bi-funnel text-red"></i>
                                 </a>
                             </div>
                             <!-- End Logo -->
         
                             <div class="card mb-3">
-                                <div class="card-body">
+                                <div class="card-body" style = "background-color: red; ">
                                     <div class="pt-4 pb-2">
                                         <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
                                         <p class="text-center small">Enter your username & password to login</p>
