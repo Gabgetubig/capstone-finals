@@ -11,13 +11,13 @@
 
         <!-- Email Address -->
         <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <x-input-label for="email" :value="__('Email')" class="form-label"/>
+            <x-text-input id="email" class="form-control" type="email" name="email" :value="old('email')" required autofocus />
+            <x-input-error :messages="$errors->get('email')" class="invalid-feedback" />
         </div>
 
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
+        <div class="col-12">
+        <x-primary-button class="btn btn-primary w-100 bg-gray">
                 {{ __('Email Password Reset Link') }}
             </x-primary-button>
         </div>
