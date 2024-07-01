@@ -1,46 +1,47 @@
-<aside id="sidebar" class="sidebar">
+<aside id="sidebar" class="sidebar" style = "background-color: red">
     <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}">
+            <a class="nav-link" href="{{ route('dashboard') }}" style ="font-family: Sanchez, sans-serif;">
                 <span style="color: black">{{ __('Dashboard') }}</span>
                 <i class="fa-solid fa-house text-black"></i>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#project-nav" data-bs-toggle="collapse" href="#"></i><span style="color: black">Projects</span><i class="bi bi-calendar-check text-black"></i><i class="bi bi-chevron-down ms-auto"></i> </a>
+            <a class="nav-link collapsed" data-bs-target="#project-nav" data-bs-toggle="collapse" href="#"></i><span style ="font-family: Sanchez, sans-serif; color: black;">Projects</span><i class="bi bi-calendar-check text-black"></i><i class="bi bi-chevron-down ms-auto"></i> </a>
             <ul id="project-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="components-alerts.html"> <i class="bi bi-circle"></i><span style="color: black">Capstone Projects</span> </a>
+                    <a href="components-alerts.html"> <i class="bi bi-circle"></i><span style ="font-family: Sanchez, sans-serif; color: black">Capstone Projects</span> </a>
                 </li>
 
                 <li>
-                    <a href="components-alerts.html"> <i class="bi bi-circle"></i><span style="color: black">Pending Projects</span> </a>
+                    <a href="components-alerts.html"> <i class="bi bi-circle"></i><span style ="font-family: Sanchez, sans-serif; color: black">Pending Projects</span> </a>
                 </li>
             </ul>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('results') }}">
+            <a class="nav-link" href="{{ route('results') }}" style ="font-family: Sanchez, sans-serif;">
                 <span style="color: black">{{ __('Results') }}</span>
                 <i class="bi bi-file-earmark-text-fill text-black   "></i>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('student') }}">
-                <span style="color: black">{{ __('Student') }}</span>
+            <a class="nav-link" href="{{ route('student') }}" style ="font-family: Sanchez, sans-serif;">
+                <span style="color: black; ">{{ __('Student') }}</span>
                 <i class="bi bi-person-fill text-black"></i>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('account') }}">
+            <a class="nav-link" href="{{ route('profile.edit') }}" style ="font-family: Sanchez, sans-serif;">
                
                 <span style="color: black">{{ __('Account') }}</span>
                 <i class="bi bi-person-fill-gear text-black"></i>
             </a>
         </li>
+        
 </aside>
 
 {{-- <nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
@@ -62,41 +63,7 @@
                     </x-nav-link>
                 </div>
             </div>
-
-            <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ms-6">
-                <x-dropdown align="right" width="48">
-                    <x-slot name="trigger">
-                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
-                            <div>{{ Auth::user()->name }}</div>
-
-                            <div class="ms-1">
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                        </button>
-                    </x-slot>
-
-                    <x-slot name="content">
-                        <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Profile') }}
-                        </x-dropdown-link>
-
-                        <!-- Authentication -->
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-
-                            <x-dropdown-link :href="route('logout')"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                {{ __('Log Out') }}
-                            </x-dropdown-link>
-                        </form>
-                    </x-slot>
-                </x-dropdown>
-            </div>
-
+        
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-900 focus:text-gray-500 dark:focus:text-gray-400 transition duration-150 ease-in-out">
@@ -124,10 +91,6 @@
                 <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
             </div>
 
-            <div class="mt-3 space-y-1">
-                <x-responsive-nav-link :href="route('profile.edit')">
-                    {{ __('Profile') }}
-                </x-responsive-nav-link>
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
@@ -139,7 +102,6 @@
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
                 </form>
-            </div>
         </div>
     </div>
 </nav> --}}

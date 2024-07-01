@@ -37,8 +37,8 @@
                         <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                             <div class="d-flex justify-content-center py-4">
                                 <a href="login.blade.php" class="logo d-flex align-items-center w-auto">
-                                    <span class="d-none d-lg-block" style="color: black;">CAPZONE</span>
-                                    <i class="bi bi-funnel text-red"></i>
+                                    <span class="d-none d-lg-block" style ="font-family: Zen Dots, sans-serif; color: black">CAPZONE</span>
+                                    <i class="bi bi-funnel text-black"></i>
                                 </a>
                             </div>
                             <!-- End Logo -->
@@ -46,8 +46,7 @@
                             <div class="card mb-3">
                                 <div class="card-body" style = "background-color: red; ">
                                     <div class="pt-4 pb-2">
-                                        <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
-                                        <p class="text-center small">Enter your username & password to login</p>
+                                        <h5 class="card-title text-center pb-0 fs-4" style="color: white;">Login to Your Account</h5>
                                     </div>
                                     {{ $slot }}
                                 </div>

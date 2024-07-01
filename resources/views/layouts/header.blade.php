@@ -1,12 +1,7 @@
-<style>
-.header {
-    background-color: red;
-} 
-</style>
-<header id="header" class="header fixed-top d-flex align-items-center " >
+<header id="header" class="header fixed-top d-flex align-items-center " style ="background-color: red;">
     <div class="d-flex align-items-center justify-content-between">
         <a href="{{ route('dashboard') }}" class="logo d-flex align-items-center">
-            <span style="color: white">CAPZONE</span>
+            <span style="color: white; font-family: Zen Dots, sans-serif">CAPZONE</span>
             <i class="bi bi-funnel text-white me-3"></i>
         </a>
         
@@ -24,21 +19,13 @@
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                     <li class="dropdown-header">
                         <h6>{{ Auth::user()->name }}</h6>
-                        <span>Web Designer</span>
+                        <span>Admin</span>
                     </li>
                     <li>
                         <hr class="dropdown-divider" />
                     </li>
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="{{ route('profile.edit') }}">
-                            <i class="bi bi-person"></i>
-                            <span>{{ __('Profile') }}</span>
-                        </a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider" />
-                    </li>
-                    <li>
+
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <x-dropdown-link :href="route('logout')" class="dropdown-item d-flex align-items-center" style="padding-left: 15px !important;"
