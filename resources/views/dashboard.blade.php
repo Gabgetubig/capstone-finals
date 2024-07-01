@@ -6,7 +6,7 @@
     </x-slot>
 
         <div class="pagetitle">
-        <h1>Dashboard</h1>
+        <h1 style="font-family: Zen Dots; colorblack;">Dashboard</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
@@ -18,13 +18,12 @@
 
     <section class="section dashboard">
         <div class="row">
-            <!-- Left side columns -->
             <div class="col-lg-8">
                 <div class="row">
                         <!-- Sales Card -->
-                        <div class="col-xxl-3 col-md-2">
+                        <div class="col-xxl-3 col-sm-6 mb-xl-0 mb-4">
                             <div class="card info-card sales-card">
-                                <div class="card-body">
+                                <div class="card-body p-3 pt-2">
                                     <h5 class="card-title">Capstone Projects</h5>
 
                                     <div class="d-flex align-items-center">
@@ -40,13 +39,12 @@
             </div>
         </div>
         <div class="row">
-            <!-- Left side columns -->
             <div class="col-lg-8">
                 <div class="row">
                         <!-- Sales Card -->
-                        <div class="col-xxl-3 col-md-2">
+                        <div class="col-xxl-3 col-sm-6 mb-xl-0 mb-4">
                             <div class="card info-card sales-card">
-                                <div class="card-body">
+                                <div class="card-body p-3 pt-2">
                                     <h5 class="card-title">Student Access</h5>
 
                                     <div class="d-flex align-items-center">
